@@ -1,0 +1,147 @@
+
+@import "./partials/button";
+@import"./partials/Colors";
+@import"./partials/Reset";
+@import"./partials/animation";
+@import"./partials/spaziatura";
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c4c0c0;
+    padding: 1em;
+
+
+    img {
+        height: 40px;
+    }
+
+    .nav-links {
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+
+            &:hover {
+                background-color: #ddd;
+                color: black;
+            }
+        }
+    }
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+
+
+.container-hero {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #640fc5;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: anim-fade-in 1s forwards;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 60%;
+
+        .container-head {
+            h1 {
+                font-size: 2rem;
+                color: #f4f4f4 ;
+                letter-spacing: 2px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: #f4f4f4  ;
+            }
+        }
+
+        .buttons {
+            margin-top: 20px;
+
+            .hero__button {
+                @extend %button;
+
+                &--primary {
+                    @extend %primary-btn-color;
+
+                    &:hover {
+                        background-color:#2a8af1;
+                    }
+                }
+                &--secondary {
+                    @extend %secondary-btn-color;
+                    
+                    &:hover {
+                    background-color: #f3a64d;
+                
+                    }
+                }
+                &--tertiary {
+                    @extend %tertiary-btn-color;
+
+                    &:hover {
+                        background-color:  #6eff73;
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        height: auto;
+        width: 30%;
+        border-radius: 10px;
+    }
+
+   
+}
+
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    img {
+        height: 50%;
+        width: 20%;
+        border-radius: 10px;
+       
+    }
+}

@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: $size-0;
+  
+  
+  font: {
+    family: $sans-serif;
+    size: $size-3;
+    weight: normal;
+  }
+  color: $body-color;
+}
